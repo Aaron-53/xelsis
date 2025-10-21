@@ -5,8 +5,52 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".push-up");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            // Optional: stop observing after first animation
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 } // triggers when 20% visible
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    // Cleanup when component unmounts
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+  const elements = document.querySelectorAll(".zoom-scroll img");
+  const zoomSpeed = 0.0003; // smaller = slower zoom
+  const maxScale = 1.2;     // zoomed in at top
+  const minScale = 1;       // normal size
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    elements.forEach((img) => {
+      const scale = Math.max(minScale, Math.min(maxScale, maxScale - scrollY * zoomSpeed));
+      img.style.transform = `scale(${scale})`;
+    });
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
+
   return (
     <Router>
       <div className="min-h-screen">
