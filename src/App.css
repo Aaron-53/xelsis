@@ -30,6 +30,11 @@
     font-family: 'BenzinRegular', sans-serif;
 }
 
+.normal-jockey1{
+    font-family: 'Jockey One', Arial, sans-serif;
+    filter: drop-shadow(-3px -3px 2px rgba(183, 27, 28, 0.8));
+}
+
 .blue-text {
     font-family: 'BenzinBold', sans-serif;
     background-image: linear-gradient(to left, #ffffff, #65fffc);

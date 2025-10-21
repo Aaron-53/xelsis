@@ -9,10 +9,10 @@ const AboutUs = () => {
 
       {/* Hero Section */}
       <section 
-        className="relative pt-24 pb-8 border-t-2 border-b-2"
+        className="relative pt-24 pb-8 border-b-2"
       >
         <div className="absolute bg-transparent inset-0" />
-        <div className="container relative z-10 bg-transparent text-center">
+        <div className="container relative z-10 bg-transparent text-left px-6 md:px-0">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8">
             <span className="gradient-header">
               Elevate Your Event
@@ -37,15 +37,15 @@ const AboutUs = () => {
             >
               <div className="absolute inset-0 /50" />
               <div className="relative z-10">
-                <h2 className="text-4xl text-center md:text-5xl font-bold mb-8 text-[#65fffc]">
+                <h2 className="text-4xl text-center md:text-5xl font-bold mb-8 normal-jockey1 text-[#65fffc]">
                   The Xelsis Journey
                 </h2>
-                <p className="text-lg text-pretty text-center mb-6 leading-relaxed">
+                <p className="text-lg text-pretty text-center mb-6 leading-relaxed normal-benzin">
                   Xelsis Events Management was born from the vision of Mathews P John, who officially 
                   launched the company in 2021 after more than 20 years of experience in the UAE's 
                   events landscape.
                 </p>
-                <p className="text-lg text-pretty text-center leading-relaxed">
+                <p className="text-lg text-pretty text-center leading-relaxed normal-benzin">
                   What began as a solo journey has grown into a full-service event management partner 
                   based in Abu Dhabi. Our foundation is built on passion, creativity, and commitment — 
                   values that drive us to craft seamless, impactful experiences across the UAE. Even as 
@@ -72,7 +72,7 @@ const AboutUs = () => {
                   From Passion to Profession
                 </span>
               </h2>
-              <blockquote className="text-lg text-pretty text-center md:text-xl leading-relaxed italic mb-8">
+              <blockquote className="text-lg text-pretty normal-benzin text-center md:text-xl leading-relaxed italic mb-8">
                 "For as long as I can remember, I've been drawn to the magic of bringing people together. 
                 My first love was music and songwriting — creating moments that could move people, connect 
                 them, and leave a lasting memory. Over time, that same passion evolved into a love for events. 
@@ -83,7 +83,7 @@ const AboutUs = () => {
                 mission has grown into a team that shares the same vision — to make every event not just 
                 organized, but meaningful, seamless, and inspiring."
               </blockquote>
-              <p className="text-right text-xl font-semibold">— Mathews P John</p>
+              <p className="text-right text-xl font-semibold normal-benzin">— Mathews P John</p>
             </div>
             <div className="order-1 md:order-2 flex justify-end">
               <img 
@@ -108,7 +108,7 @@ const AboutUs = () => {
               </h2>
             </div>
             <div className="md:col-span-2">
-              <p className="text-lg text-pretty text-center md:text-xl leading-relaxed italic mb-8">
+              <p className="text-lg text-pretty normal-benzin text-center md:text-xl leading-relaxed italic mb-8">
                 Xelsis envisions a future where every event we manage reflects our commitment to 
                 understanding and exceeding client expectations. We aim to set the standard for 
                 people-focused events in the UAE and beyond delivering seamless, memorable experiences 
@@ -139,24 +139,24 @@ const AboutUs = () => {
             {/* Top row - 3 boxes */}
             <div className="grid md:grid-cols-3">
               <div className="/60 backdrop-blur-sm p-8 border-2 border-[#65fffc]" >
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text">20+ Years of Experience</h3>
-                <p className="text-muted-foreground text-center">
+                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">20+ Years of Experience</h3>
+                <p className="text-muted-foreground text-center normal-benzin text-center">
                   From freelance events to sophisticated large-scale productions
                 </p>
               </div>
               
               <div className="/60 backdrop-blur-sm p-8 border-2 border-l-0 border-[#65fffc]" >
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text">
+                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Personalized Approach with Global Standards
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground normal-benzin text-center">
                   Boutique care, with an eye for industry-leading practices.
                 </p>
               </div>
               
               <div className="/60 backdrop-blur-sm p-8 border-2 border-l-0" style={{ borderColor: '#65fffc' }}>
-                <h3 className="text-2xl font-bold mb-4 text-secondary">End-to-End Solutions</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">End-to-End Solutions</h3>
+                <p className="text-muted-foreground normal-benzin text-center">
                   From conceptual design and planning to execution and wrap-up.
                 </p>
               </div>
@@ -165,19 +165,19 @@ const AboutUs = () => {
             {/* Bottom row - 2 boxes expanded */}
             <div className="grid md:grid-cols-2">
               <div className="/60 backdrop-blur-sm p-8 border-2 border-t-0" style={{ borderColor: '#65fffc' }}>
-                <h3 className="text-2xl font-bold mb-4 text-secondary">
+                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Strong Vendor & Venue Network
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground normal-benzin text-center">
                   Trusted partnerships across the region for seamless delivery
                 </p>
               </div>
               
               <div className="/60 backdrop-blur-sm p-8 border-2 border-t-0 border-l-0" style={{ borderColor: '#65fffc' }}>
-                <h3 className="text-2xl font-bold mb-4 text-secondary">
+                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Creative, Flexible, and Reliable
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground normal-benzin text-center">
                   Every project is custom-designed — and on time.
                 </p>
               </div>
