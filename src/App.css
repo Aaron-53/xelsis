@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 @import "tailwindcss";
+
+
+.gradient-header {
+    font-family: 'Jockey One', Arial, sans-serif;
+    background-image: linear-gradient(to right, #B71B1C, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    filter: drop-shadow(-3px 0 2px rgba(183, 27, 28, 0.8));
+    /* left side red shadow */
+}
