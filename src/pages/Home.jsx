@@ -9,34 +9,6 @@ import icon4 from "../assets/homeimages/4.svg";
 import icon5 from "../assets/homeimages/5.svg";
 
 export default function Home() {
-  useEffect(() => {
-    const observers = [];
-    
-    const observerCallback = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          entry.target.classList.add('visible');
-        }
-      });
-    };
-
-    const observerOptions = {
-      threshold: 0.2
-    };
-
-    const elements = document.querySelectorAll('.slide-in, .slide-in-right, .fade-in');
-    elements.forEach(el => {
-      const observer = new IntersectionObserver(observerCallback, observerOptions);
-      observer.observe(el);
-      observers.push(observer);
-    });
-
-    // Cleanup
-    return () => {
-      observers.forEach(observer => observer.disconnect());
-    };
-  }, []);
   return (
     <div className="min-h-screen text-white">
       
@@ -60,7 +32,7 @@ export default function Home() {
                 <span className="gradient-header">to Reality</span>
               </h1>
 
-              <p className="text-white text-lg leading-relaxed max-w-xl">
+              <p className="text-white text-lg leading-relaxed normal-benzin max-w-xl">
                 With over two decades of hands-on expertise and a deep understanding of the events landscape, Xelsis Events Management is your trusted partner in crafting seamless, impactful experiences across the UAE.
               </p>
 
@@ -73,7 +45,7 @@ export default function Home() {
 
             {/* Right Column - Event Image */}
             <div className="relative slide-in-right">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-900/50 zoom-scroll">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-900/50">
                 <img 
                   src={image21} 
                   alt="Xelsis Events Performance" 
@@ -104,7 +76,7 @@ export default function Home() {
             <span className="gradient-header">Our Story</span>
           </h2>
 
-          <p className="text-white text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto mb-12">
+          <p className="text-white text-lg lg:text-xl leading-relaxed normal-benzin max-w-4xl mx-auto mb-12">
             Backed by two decades of experience and 250+ successful events, Xelsis Events Management is your partner for extraordinary occasions. We specialize in corporate, cultural, and live entertainment experiences that leave lasting impressions across the UAE.
           </p>
 
@@ -118,14 +90,13 @@ export default function Home() {
       
       {/* Team/Event Image Section */}
       <section className="relative">
-        <div className="w-full h-px bg-cyan-400 zoom-scroll"></div>
-        <div className="zoom-scroll overflow-hidden">
+        <div className="w-full h-px bg-cyan-400 "></div>
           <img
             src={home}
             alt="Xelsis Events Team"
             className="object-cover w-[110%] max-w-none" 
           />
-        </div>
+        
 
         <div className="w-full h-px bg-cyan-400"></div>
         
@@ -146,7 +117,8 @@ export default function Home() {
             {/* Corporate & Professional Events */}
               <div className="px-12 py-16 border-l border-t border-cyan-400/30 slide-in">
                 <div className="flex items-center gap-6">
-                  <img src={icon1} alt="Corporate icon" className="w-14 h-14 filter invert fade-in" aria-hidden="true" />
+                 <img src={icon1} alt="Corporate icon" className="w-14 h-14 filter invert brightness-200" aria-hidden="true"/>
+
                   <h3 className="text-5xl font-bold leading-tight tracking-wide push-up">
                     <span className="gradient-header-cyan">Corporate &<br />
                     Professional<br />
@@ -155,7 +127,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="px-12 py-16 border-t border-r border-cyan-400/30 slide-in-right">
-              <p className="text-white   text-lg leading-relaxed push-up">
+              <p className="text-white   text-lg leading-relaxed normal-benzin push-up">
                 Crafting corporate events that reflect your<br />
                 brand's professionalism. From<br />
                 high-stakes conferences to engaging<br />
@@ -168,7 +140,7 @@ export default function Home() {
             {/* Live Entertainment */}
               <div className="px-12 py-16 border-l border-t border-cyan-400/30 slide-in">
                 <div className="flex items-center gap-6">
-                  <img src={icon2} alt="Live icon" className="w-14 h-14 filter invert fade-in" aria-hidden="true" />
+                  <img src={icon2} alt="Live icon" className="w-14 h-14 filter" aria-hidden="true" />
                   <h3 className="text-5xl font-bold leading-tight tracking-wide push-up">
                     <span className="gradient-header-cyan">Live Entertainment &<br />
                     Cultural Experiences</span>
@@ -176,7 +148,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="px-12 py-16 border-t border-r border-cyan-400/30 slide-in-right">
-              <p className="text-white text-lg leading-relaxed push-up">
+              <p className="text-white text-lg leading-relaxed normal-benzin push-up">
                 Creating unforgettable live entertainment and cultural experiences that captivate your audience. 
                 We handle all aspects of concerts, festivals, and shows to deliver a truly magical and memorable event.
               </p>
@@ -186,7 +158,7 @@ export default function Home() {
             {/* Bespoke & Custom Creations */}
               <div className="px-12 py-16 border-l border-t border-cyan-400/30">
                 <div className="flex items-center gap-6">
-                  <img src={icon3} alt="Bespoke icon" className="w-14 h-14 filter invert fade-in" aria-hidden="true" />
+                  <img src={icon3} alt="Bespoke icon" className="w-14 h-14 filter invert brightness-200" aria-hidden="true" />
                   <h3 className="text-5xl font-bold leading-tight tracking-wide push-up">
                     <span className="gradient-header-cyan">Bespoke &<br />
                     Custom Creations</span>
@@ -194,7 +166,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="px-12 py-16 border-t border-r border-cyan-400/30">
-              <p className="text-white text-lg leading-relaxed push-up">
+              <p className="text-white text-lg leading-relaxed normal-benzin push-up">
                 Designing and executing unique, one-of-a-kind events tailored specifically to your vision. 
                 Our team works closely with you to bring your dream occasion to life with meticulous attention to detail.
               </p>
@@ -204,14 +176,14 @@ export default function Home() {
             {/* Exhibitions */}
               <div className="px-12 py-16 border-l border-t border-cyan-400/30">
                 <div className="flex items-center gap-6">
-                  <img src={icon4} alt="Exhibitions icon" className="w-14 h-14 filter invert fade-in" aria-hidden="true" />
+                  <img src={icon4} alt="Exhibitions icon" className="w-14 h-14 filter" aria-hidden="true" />
                   <h3 className="text-5xl font-bold leading-tight tracking-wide push-up">
                     <span className="gradient-header-cyan">Exhibitions</span>
                   </h3>
                 </div>
             </div>
             <div className="px-12 py-16 border-t border-r border-cyan-400/30">
-              <p className="text-white text-lg leading-relaxed push-up">
+              <p className="text-white text-lg leading-relaxed normal-benzin push-up">
                 Managing and designing dynamic exhibitions that effectively showcase products and ideas. 
                 We provide comprehensive services from booth design to full-scale logistics, ensuring 
                 your display makes a lasting impression.
@@ -221,14 +193,14 @@ export default function Home() {
             {/* Sports Events */}
               <div className="px-12 py-16 border-l border-t border-b border-cyan-400/30">
                 <div className="flex items-center gap-6">
-                  <img src={icon5} alt="Sports icon" className="w-14 h-14 filter invert fade-in" aria-hidden="true" />
+                  <img src={icon5} alt="Sports icon" className="w-14 h-14 filter invert brightness-200" aria-hidden="true" />
                   <h3 className="text-5xl font-bold leading-tight tracking-wide push-up">
                     <span className="gradient-header-cyan">Sports Events</span>
                   </h3>
                 </div>
             </div>
             <div className="px-12 py-16 border-t border-r border-b border-cyan-400/30">
-              <p className="text-white text-lg leading-relaxed push-up">
+              <p className="text-white text-lg leading-relaxed normal-benzin push-up">
                 Handling the intricate details of sporting<br />
                 events, from small local tournaments to<br />
                 major competitions. We focus on creating<br />

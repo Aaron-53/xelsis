@@ -63,81 +63,10 @@
 }
 
 .gradient-header-cyan {
-    font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to right, #06b6d4, #ffffff);
+    font-family: 'BenzinBold', sans-serif;
+    background-image: linear-gradient(to left, #ffffff, #65fffc);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     width: fit-content;
-    
 }
-@keyframes pushUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* initial hidden state */
-.push-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.5s ease-out;
-}
-
-/* animation class triggered when visible */
-.push-up.visible {
-  animation: pushUp 0.8s ease-out forwards;
-}
-
-
-/* fade-in for icons and small elements */
-.fade-in {
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* initial hidden state */
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
-
-/* animation when visible */
-.fade-in.visible {
-  animation: fadeIn 1s ease-out forwards;
-}
-.zoom-scroll {
-  overflow: hidden;             
-  display: inline-block;         
-  position: sticky;
-  top: 0;
-}
-
-.zoom-scroll img {
-  width: 100%;
-  height: auto;
-  transform-origin: center center;
-  transition: transform 0.1s ease-out; 
-}
-
-
