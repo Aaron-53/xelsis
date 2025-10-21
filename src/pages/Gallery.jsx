@@ -139,12 +139,13 @@ function Gallery() {
       </div>
 
       {/* Gallery Grid */}
-      <div className="container mx-auto px-4 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+      <div className="w-full pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
           {galleryItems.slice(0, visibleItems).map((item) => (
             <div
               key={item.id}
-              className="relative aspect-[4/3] overflow-hidden group cursor-pointer bg-gray-900"
+              className="relative aspect-[1/1] overflow-hidden group cursor-pointer border-1"
+              style={{ borderColor: '#65fffc' }} 
             >
               <img
                 src={item.src}
