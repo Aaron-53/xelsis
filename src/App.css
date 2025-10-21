@@ -8,6 +8,48 @@
   color: #fff;
 }
 
+/* Import Benzin font - update path as needed */
+@font-face {
+  font-family: 'BenzinRegular';
+  src: url('/fonts/benzin-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BenzinBold';
+  src: url('/fonts/benzin-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.blue-gradient-text {
+  font-family: 'BenzinBold', sans-serif;
+    background-image: linear-gradient(to right, #ffffff, #65fffc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}
+.normal-benzin {
+    font-family: 'BenzinRegular', sans-serif;
+}
+
+.normal-jockey1{
+    font-family: 'Jockey One', Arial, sans-serif;
+    filter: drop-shadow(-3px -3px 2px rgba(183, 27, 28, 0.8));
+}
+
+.blue-text {
+    font-family: 'BenzinBold', sans-serif;
+    background-image: linear-gradient(to left, #ffffff, #65fffc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}
 
 .gradient-header {
     font-family: 'Jockey One', Arial, sans-serif;
