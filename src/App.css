@@ -3,34 +3,35 @@
 
 /* Import Benzin font - update path as needed */
 @font-face {
-  font-family: 'Benzin';
-  src: url('/fonts/Benzin-Regular.woff2') format('woff2'),
-       url('/fonts/Benzin-Regular.woff') format('woff');
+  font-family: 'BenzinRegular';
+  src: url('/fonts/benzin-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Benzin';
-  src: url('/fonts/Benzin-Bold.woff2') format('woff2'),
-       url('/fonts/Benzin-Bold.woff') format('woff');
+  font-family: 'BenzinBold';
+  src: url('/fonts/benzin-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 .blue-gradient-text {
-  font-family: 'Benzin', sans-serif;
+  font-family: 'BenzinBold', sans-serif;
     background-image: linear-gradient(to right, #ffffff, #65fffc);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     width: fit-content;
 }
+.normal-benzin {
+    font-family: 'BenzinRegular', sans-serif;
+}
 
 .blue-text {
-    font-family: 'Benzin', sans-serif;
+    font-family: 'BenzinBold', sans-serif;
     background-image: linear-gradient(to left, #ffffff, #65fffc);
     -webkit-background-clip: text;
     background-clip: text;
