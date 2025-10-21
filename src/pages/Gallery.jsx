@@ -126,35 +126,13 @@ function Gallery() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative">
-      {/* Full Page Background Pattern */}
-      <div
-        className="fixed inset-0  pointer-events-none"
-        style={{
-          backgroundImage: "url('/images/bg-pattern.png')",
-          backgroundRepeat: "repeat",
-          backgroundSize: "auto",
-          backgroundPosition: "center",
-        }}
-      />
-
-      {/* Header with Logo */}
-      <header className="relative z-10 px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <img
-            src="/images/logo.png"
-            alt="XELSIS Events"
-            className="h-12 md:h-16 w-auto object-contain"
-          />
-        </div>
-      
-      </header>
+    <div className="min-h-screen relative">
 
       {/* Hero Section with Background Pattern */}
       <div className="relative">
         {/* Gallery Title */}
-        <div className="relative z-10 text-center py-20">
-          <h1 className="text-7xl gradient-header md:text-8xl font-bold">
+        <div className="relative z-10 text-center flex justify-center py-20">
+          <h1 className="text-7xl gradient-header text-center md:text-8xl font-bold">
             Gallery
           </h1>
         </div>
@@ -192,51 +170,8 @@ function Gallery() {
           </div>
         )}
       </div>
-
-      {/* Footer */}
-      <footer className="relative  py-12">
-        {/* Background Pattern */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            background: `repeating-linear-gradient(
-              45deg,
-              transparent,
-              transparent 20px,
-              rgba(0, 255, 255, 0.1) 20px,
-              rgba(0, 255, 255, 0.1) 40px
-            )`,
-          }}
-        />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <img
-                src="/images/logo.png"
-                alt="XELSIS Events"
-                className="h-24 md:h-32 w-auto object-contain"
-              />{" "}
-            </div>
-
-            {/* Contact Info */}
-            <div className="text-center md:text-left space-y-2">
-              <p className="text-sm text-gray-400">
-                © 2025 by Xelsis Live Events Management sole proprietorship LLC
-              </p>
-              <p className="text-white">+971 50 6218392 | +971 50 9018392</p>
-              <p className="text-white">info@xelsisevents.com</p>
-              <p className="text-gray-400 text-sm">
-                Post Box No. 29346, AbuDhabi, UAE
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
 
 export default Gallery;
-
