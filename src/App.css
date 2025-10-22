@@ -55,6 +55,7 @@
     font-family: 'Jockey One', Arial, sans-serif;
     background-image: linear-gradient(to right, #B71B1C, #ffffff);
     -webkit-background-clip: text;
+    letter-spacing: 2px;
     background-clip: text;
     color: transparent;
     width: fit-content;
@@ -69,4 +70,7 @@
     background-clip: text;
     color: transparent;
     width: fit-content;
+}
+footer {
+  font-family: 'BenzinRegular', sans-serif;
 }

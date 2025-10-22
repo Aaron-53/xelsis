@@ -57,13 +57,13 @@ function App() {
 
               {/* Contact Info */}
               <div className="text-center md:text-left space-y-2">
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-white">
                   © 2025 by Xelsis Live Events Management sole proprietorship
                   LLC
                 </p>
                 <p className="text-white">+971 50 6218392 | +971 50 9018392</p>
                 <p className="text-white">info@xelsisevents.com</p>
-                <p className="text-gray-400 text-sm">
+                <p className="text-white text-sm">
                   Post Box No. 29346, AbuDhabi, UAE
                 </p>
               </div>
