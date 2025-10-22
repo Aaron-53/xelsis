@@ -144,7 +144,7 @@ function Gallery() {
           {galleryItems.slice(0, visibleItems).map((item) => (
             <div
               key={item.id}
-              className="relative aspect-[1/1] overflow-hidden group cursor-pointer border-1"
+              className="relative aspect-square overflow-hidden group cursor-pointer border"
               style={{ borderColor: '#65fffc' }} 
             >
               <img

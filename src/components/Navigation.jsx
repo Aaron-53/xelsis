@@ -36,8 +36,8 @@ function Navigation() {
   };
 
   return (
-    <nav className=" overflow-hidden">
-      <div className="container ">
+    <nav className="overflow-hidden relative z-50">
+      <div className="container">
         <div className="flex items-center justify-between pt-3 w-screen mx-auto px-10">
           <div className="flex items-center">
             <Link to="/" className="hover:opacity-80 transition-opacity">
@@ -48,17 +48,21 @@ function Navigation() {
           {/* Hamburger Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-300 hover:text-white focus:outline-none focus:text-white"
+            className="text-gray-300 hover:text-white focus:outline-none focus:text-white relative z-50 menu-button nav-on-top"
             aria-label="Toggle menu"
           >
             <div className="hidden max-sm:block">
               {isOpen ? (
-                <div className="text-xl font-bold">✕</div>
+                <div className="text-xl font-bold bg-white/20 p-2 rounded-full backdrop-blur-sm shadow-lg">
+                  ✕
+                </div>
               ) : (
-                <div className="text-xl font-bold">☰</div>
+                <div className="text-xl font-bold bg-white/20 p-2 rounded-full backdrop-blur-sm shadow-lg">
+                  ☰
+                </div>
               )}
             </div>
-            <div className="hidden sm:flex bg-[#afbec5] w-[60px] h-[20px] rounded-full justify-center items-center text-black px-16 py-4">
+            <div className="hidden sm:flex bg-[#afbec5] hover:bg-[#212121] w-[60px] h-[20px] rounded-full justify-center items-center text-black hover:text-[#E4E4E4] px-16 py-4 transition-colors duration-300">
               MENU
             </div>
           </button>
@@ -66,7 +70,7 @@ function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="fixed inset-0 w-screen h-screen bg-[#2a2a2a] z-50 flex flex-col">
+          <div className="fixed inset-0 w-screen h-screen bg-[#2a2a2a] z-100 flex flex-col">
             {/* Close button at top-right */}
             <div className="absolute top-8 right-8">
               <button
