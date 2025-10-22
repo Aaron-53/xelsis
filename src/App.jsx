@@ -6,7 +6,12 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import "./App.css";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init({
+  duration: 1000, // animation duration in ms
+});
 function App() {
   return (
     <Router>

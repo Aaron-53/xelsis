@@ -39,7 +39,6 @@
 
 .normal-jockey1{
     font-family: 'Jockey One', Arial, sans-serif;
-    filter: drop-shadow(-3px -3px 2px rgba(183, 27, 28, 0.8));
 }
 
 .blue-text {
@@ -69,4 +68,20 @@
     background-clip: text;
     color: transparent;
     width: fit-content;
+}
+
+/* Ensures navigation elements stay on top */
+.nav-on-top {
+    position: relative;
+    z-index: 50;
+}
+
+/* Menu button styling with hover effect */
+.menu-button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
