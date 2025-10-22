@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form-box text-white">
       <form
-        action="https://formsubmit.co/6ad70c9cd304791e14a0c2641c0d1fd9"
+        action="https://formspree.io/f/xqayvprr"
         method="POST"
       >
         {/* Hidden Configs from ContactForm */}

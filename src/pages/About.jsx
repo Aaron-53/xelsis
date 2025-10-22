@@ -112,10 +112,10 @@ const AboutUs = () => {
             <span className="gradient-header">What Sets Us Apart</span>
           </h2>
 
-          <div className="  space-y-0">
+          <div className="space-y-0">
             {/* Top row - 3 boxes */}
             <div className="grid md:grid-cols-3">
-              <div className="/60 backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
+              <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
                 <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   20+ Years of Experience
                 </h3>
@@ -124,7 +124,7 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              <div className="/60 backdrop-blur-sm p-8 border-2 flex justify-center items-center flex-col px-20 py-30 border-l-0 border-[#65fffc]">
+              <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
                 <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Personalized Approach with Global Standards
                 </h3>
@@ -133,10 +133,7 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              <div
-                className="/60 backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-l-0"
-                style={{ borderColor: "#65fffc" }}
-              >
+              <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
                 <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   End-to-End Solutions
                 </h3>
@@ -148,7 +145,7 @@ const AboutUs = () => {
 
             {/* Bottom row - 2 boxes expanded */}
             <div className="grid md:grid-cols-2">
-              <div className="/60 backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-t-0 border-[#65fffc]">
+              <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
                 <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Strong Vendor & Venue Network
                 </h3>
@@ -157,7 +154,7 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              <div className=" backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-t-0 border-l-0 border-[#65fffc]">
+              <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
                 <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center">
                   Creative, Flexible, and Reliable
                 </h3>

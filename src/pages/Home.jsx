@@ -148,7 +148,7 @@ export default function Home() {
             className="space-y-6 text-center px-8 lg:px-16"
             data-aos="fade-up"
           >
-            <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
               <span className="gradient-header">We Bring</span>
               <br />
               <span className="gradient-header">Your Vision</span>
@@ -183,7 +183,7 @@ export default function Home() {
           className="relative z-20 container mx-auto px-6 lg:px-12 text-center"
           data-aos="fade-up"
         >
-          <h2 className="text-6xl md:text-7xl font-bold mb-6">
+          <h2 className="text-6xl lg:text-7xl font-bold mb-6">
             <span className="gradient-header">Our Story</span>
           </h2>
 
@@ -231,27 +231,27 @@ export default function Home() {
 
         {/* Section title in centered container */}
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-6xl md:text-7xl font-bold">
+          <h2 className="text-6xl lg:text-7xl font-bold">
             <span className="gradient-header">Services</span>
           </h2>
         </div>
 
         {/* Full-width grid without container - using negative margins to extend beyond viewport */}
-        <div className="grid grid-cols-2 divide-x divide-cyan-400/30 w-screen -ml-[calc(50vw-50%)]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x divide-cyan-400/30 w-screen -ml-[calc(50vw-50%)]">
           {/* Corporate & Professional Events */}
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-l border-t border-cyan-400/30 slide-in">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l border-t border-cyan-400/30 slide-in">
             <div
-              className="flex items-center justify-start gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
               data-aos="fade-up"
             >
               <img
                 src={icon1}
                 alt="Corporate icon"
-                className="w-12 h-12 filter"
+                className="w-10 h-10 sm:w-12 sm:h-12 filter shrink-0"
                 aria-hidden="true"
               />
 
-              <h3 className="text-4xl font-bold leading-tight tracking-wide push-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-wide push-up">
                 <span className="gradient-header-cyan">
                   Corporate &<br />
                   Professional
@@ -261,9 +261,9 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-t border-r border-cyan-400/30 slide-in-right">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l lg:border-l-0 border-t lg:border-r border-cyan-400/30 slide-in-right">
             <p
-              className="text-white text-base leading-relaxed normal-benzin push-up text-left "
+              className="text-white text-sm sm:text-base leading-relaxed normal-benzin push-up text-left"
               data-aos="fade-up"
             >
               Crafting corporate events that reflect your brand's
@@ -271,21 +271,20 @@ export default function Home() {
               team-building retreats, we manage every detail.
             </p>
           </div>
-          <div className="col-span-2 h-px bg-cyan-400/30"></div>
-
+          <div className="col-span-1 lg:col-span-2 h-px bg-cyan-400/30"></div>
           {/* Live Entertainment */}
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-l border-t border-cyan-400/30 slide-in">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l border-t border-cyan-400/30 slide-in">
             <div
-              className="flex items-center justify-start gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
               data-aos="fade-up"
             >
               <img
                 src={icon2}
                 alt="Live icon"
-                className="w-12 h-12 filter"
+                className="w-10 h-10 sm:w-12 sm:h-12 filter shrink-0"
                 aria-hidden="true"
               />
-              <h3 className="text-4xl font-bold leading-tight tracking-wide push-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-wide push-up">
                 <span className="gradient-header-cyan">
                   Live Entertainment &<br />
                   Cultural Experiences
@@ -293,9 +292,9 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-t border-r border-cyan-400/30 slide-in-right">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l lg:border-l-0 border-t lg:border-r border-cyan-400/30 slide-in-right">
             <p
-              className="text-white text-base leading-relaxed normal-benzin push-up text-left"
+              className="text-white text-sm sm:text-base leading-relaxed normal-benzin push-up text-left"
               data-aos="fade-up"
             >
               Creating unforgettable live entertainment and cultural experiences
@@ -304,21 +303,21 @@ export default function Home() {
               event.
             </p>
           </div>
-          <div className="col-span-2 h-0.5 bg-cyan-400/30"></div>
+          <div className="col-span-1 lg:col-span-2 h-0.5 bg-cyan-400/30"></div>
 
           {/* Bespoke & Custom Creations */}
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-l border-t border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l border-t border-cyan-400/30">
             <div
-              className="flex items-center justify-start gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
               data-aos="fade-up"
             >
               <img
                 src={icon3}
                 alt="Bespoke icon"
-                className="w-12 h-12 filter"
+                className="w-10 h-10 sm:w-12 sm:h-12 filter shrink-0"
                 aria-hidden="true"
               />
-              <h3 className="text-4xl font-bold leading-tight tracking-wide push-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-wide push-up">
                 <span className="gradient-header-cyan">
                   Bespoke &<br />
                   Custom Creations
@@ -326,9 +325,9 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-t border-r border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l lg:border-l-0 border-t lg:border-r border-cyan-400/30">
             <p
-              className="text-white text-base leading-relaxed normal-benzin push-up text-left"
+              className="text-white text-sm sm:text-base leading-relaxed normal-benzin push-up text-left"
               data-aos="fade-up"
             >
               Designing and executing unique, one-of-a-kind events tailored
@@ -337,28 +336,28 @@ export default function Home() {
               detail.
             </p>
           </div>
-          <div className="col-span-2 h-0.5 bg-cyan-400/30"></div>
+          <div className="col-span-1 lg:col-span-2 h-0.5 bg-cyan-400/30"></div>
 
           {/* Exhibitions */}
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-l border-t border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l border-t border-cyan-400/30">
             <div
-              className="flex items-center justify-start gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
               data-aos="fade-up"
             >
               <img
                 src={icon4}
                 alt="Exhibitions icon"
-                className="w-12 h-12 filter"
+                className="w-10 h-10 sm:w-12 sm:h-12 filter shrink-0"
                 aria-hidden="true"
               />
-              <h3 className="text-4xl font-bold leading-tight tracking-wide push-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-wide push-up">
                 <span className="gradient-header-cyan">Exhibitions</span>
               </h3>
             </div>
           </div>
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-t border-r border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l lg:border-l-0 border-t lg:border-r border-cyan-400/30">
             <p
-              className="text-white text-base leading-relaxed normal-benzin push-up text-left"
+              className="text-white text-sm sm:text-base leading-relaxed normal-benzin push-up text-left"
               data-aos="fade-up"
             >
               Managing and designing dynamic exhibitions that effectively
@@ -369,25 +368,25 @@ export default function Home() {
           </div>
 
           {/* Sports Events */}
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-l border-t border-b border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l border-t border-b border-cyan-400/30">
             <div
-              className="flex items-center justify-start gap-4"
+              className="flex items-center justify-start gap-3 sm:gap-4"
               data-aos="fade-up"
             >
               <img
                 src={icon5}
                 alt="Sports icon"
-                className="w-12 h-12 filter"
+                className="w-10 h-10 sm:w-12 sm:h-12 filter shrink-0"
                 aria-hidden="true"
               />
-              <h3 className="text-4xl font-bold leading-tight tracking-wide push-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-wide push-up">
                 <span className="gradient-header-cyan">Sports Events</span>
               </h3>
             </div>
           </div>
-          <div className="px-6 sm:px-10 md:px-16 lg:px-24 py-12 border-t border-r border-b border-cyan-400/30">
+          <div className="px-6 sm:px-10 lg:px-16 lg:px-24 py-8 sm:py-10 lg:py-12 border-l lg:border-l-0 border-t lg:border-r border-b border-cyan-400/30">
             <p
-              className="text-white text-base leading-relaxed normal-benzin push-up text-left"
+              className="text-white text-sm sm:text-base leading-relaxed normal-benzin push-up text-left"
               data-aos="fade-up"
             >
               Handling the intricate details of sporting events, from small
