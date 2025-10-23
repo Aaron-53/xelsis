@@ -8,7 +8,7 @@ const ContactInfo = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         
         {/* Address Section */}
-        <div className="contact-info-section">
+        <div className="contact-info-section" data-aos="fade-up" data-aos-duration="1000">
           <div className="contact-info-header flex flex-col items-center" >
             <MapPin className="contact-info-icon" />
             <div>
@@ -22,7 +22,7 @@ const ContactInfo = () => {
         </div>
 
         {/* Phone Section */}
-        <div className="contact-info-section">
+        <div className="contact-info-section" data-aos="fade-up" data-aos-duration="1000">
           <div className="contact-info-header flex flex-col items-center">
             <Phone className="contact-info-icon" />
             <div>
@@ -40,23 +40,23 @@ const ContactInfo = () => {
         </div>
 
         {/* Email Section */}
-        <div className="contact-info-section">
+        <div className="contact-info-section" data-aos="fade-up" data-aos-duration="1000">
           <div className="contact-info-header flex flex-col items-center">
             <Mail className="contact-info-icon" />
             <div>
               <h3 className="contact-info-title">Email</h3>
               <a
-                href="mailto:xelsislive@gmail.com"
+                href="mailto:info@xelsisevents.com"
                 className="contact-info-link"
               >
-                xelsislive@gmail.com
+                info@xelsisevents.com
               </a>
             </div>
           </div>
         </div>
 
         {/* Social Media Section */}
-        <div className="contact-info-section">
+        <div className="contact-info-section" data-aos="fade-up" data-aos-duration="1000">
           <div className="contact-info-header flex flex-col items-center">
             <ThumbsUp className="contact-info-icon" />
             <div style={{ textAlign: 'center' }}>
