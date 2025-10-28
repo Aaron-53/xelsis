@@ -48,7 +48,7 @@ function Navigation() {
           {/* Hamburger Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-300 hover:text-white focus:outline-none focus:text-white relative z-50 menu-button nav-on-top"
+            className="text-gray-300 hover:text-white focus:outline-none focus:text-white relative z-50 nav-on-top"
             aria-label="Toggle menu"
           >
             <div className="hidden max-sm:block">
