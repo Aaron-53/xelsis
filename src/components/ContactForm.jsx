@@ -3,14 +3,19 @@ import "./ContactForm.css";
 const ContactForm = () => {
   return (
     <div className="contact-form-box text-white">
-      <form
-        action="https://formspree.io/f/xqayvprr"
-        method="POST"
-      >
+      <form action="https://formspree.io/f/mldolbly" method="POST">
         {/* Hidden Configs from ContactForm */}
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://yourdomain.com/thankyou" />
-        <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourdomain.com/thankyou"
+        />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Contact Form Submission!"
+        />
         <input type="hidden" name="_template" value="box" />
 
         <div className="form-row">
@@ -83,17 +88,19 @@ const ContactForm = () => {
           <label htmlFor="eventType" className="form-label">
             What Type of Event?
           </label>
-          <select
-            id="eventType"
-            name="eventType"
-            className="form-input"
-          >
+          <select id="eventType" name="eventType" className="form-input">
             <option value="">Choose an event</option>
-            <option value="Corporate">Corporate & Professional Events</option>
-            <option value="Live">Live Entertainment & Cultural Experience</option>
-            <option value="Bespoke">Bespoke & Custom Creations</option>
+            <option value="Corporate & Professional Events">
+              Corporate & Professional Events
+            </option>
+            <option value="Live Entertainment & Cultural Experience">
+              Live Entertainment & Cultural Experience
+            </option>
+            <option value="Bespoke & Custom Creations">
+              Bespoke & Custom Creations
+            </option>
             <option value="Exhibitions">Exhibitions</option>
-            <option value="Sports">Sports Events</option>
+            <option value="Sports Events">Sports Events</option>
           </select>
         </div>
 
