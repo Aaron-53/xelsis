@@ -62,7 +62,7 @@ function Navigation() {
                 </div>
               )}
             </div>
-            <div className="hidden sm:flex bg-[#afbec5] hover:bg-[#212121] w-[60px] h-[20px] rounded-full justify-center items-center text-black hover:text-[#E4E4E4] px-16 py-4 transition-colors duration-300">
+            <div className="hidden sm:flex bg-red-600 hover:bg-red-700 w-[60px] h-[20px] rounded-full justify-center items-center text-white px-16 py-4 transition-colors duration-300">
               MENU
             </div>
           </button>
