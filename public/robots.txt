@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.xelsis.com/sitemap.xml
+Sitemap: https://xelsisevents.com/sitemap.xml
 
 # Crawl-delay (optional - uncomment if needed)
 # Crawl-delay: 10
