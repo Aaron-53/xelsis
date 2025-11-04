@@ -40,17 +40,17 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen text-white">
-      <SEO 
+      <SEO
         title="About Xelsis Events - Leading Event Management Company in UAE"
         description="Discover Xelsis Events Management, UAE's premier event planning company with over 20 years of experience, 250+ successful events, and expertise in corporate, cultural, and live entertainment events."
         keywords="about Xelsis Events, event management company UAE, corporate events Dubai, event planning services, UAE event management, Dubai event planners"
         url="/about"
         structuredData={[
           breadcrumbSchema([
-            { name: 'Home', url: '/' },
-            { name: 'About', url: '/about' }
+            { name: "Home", url: "/" },
+            { name: "About", url: "/about" },
           ]),
-          serviceSchema
+          serviceSchema,
         ]}
       />
       {/* Hero Section */}
@@ -143,16 +143,22 @@ const AboutUs = () => {
           />
         </div>
       </section>
-     {/* Our Vision Section */}
+      {/* Our Vision Section */}
       <section className=" border-t-2 py-20 border-b-2 border-[#65fffc] grid md:grid-cols-3 items-center justify-center gap-12 px-20">
         <div className="md:col-span-1">
-          <h2 className="text-4xl md:text-5xl font-bold" data-aos="fade-up"
-            data-aos-duration="2000">
+          <h2
+            className="text-4xl md:text-5xl font-bold"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <span className="gradient-header text-8xl">Our Vision</span>
           </h2>
         </div>
-        <div className="md:col-span-2" data-aos="fade-up"
-            data-aos-duration="2000">
+        <div
+          className="md:col-span-2"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <p className="text-lg text-pretty normal-benzin text-center md:text-xl leading-relaxed italic">
             Xelsis envisions a future where every event we manage reflects our
             commitment to understanding and exceeding client expectations. We
@@ -169,8 +175,11 @@ const AboutUs = () => {
       {/* What Sets Us Apart Section */}
       <section className="relative pt-20 border-t-2 border-b-2 border-[#65fffc]">
         <div className=" relative z-10">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16" data-aos="fade-up"
-            data-aos-duration="2000">
+          <h2
+            className="text-5xl md:text-6xl font-bold text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <span className="gradient-header">What Sets Us Apart</span>
           </h2>
 
@@ -178,34 +187,52 @@ const AboutUs = () => {
             {/* Top row - 3 boxes */}
             <div className="grid md:grid-cols-3">
               <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <h3
+                  className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   20+ Years of Experience
                 </h3>
-                <p className="text-muted-foreground text-center normal-benzin" data-aos="fade-up"
-            data-aos-duration="2000">
+                <p
+                  className="text-muted-foreground text-center normal-benzin"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   From freelance events to sophisticated large-scale productions
                 </p>
               </div>
 
               <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <h3
+                  className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Personalized Approach with Global Standards
                 </h3>
-                <p className="text-muted-foreground normal-benzin text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <p
+                  className="text-muted-foreground normal-benzin text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Boutique care, with an eye for industry-leading practices.
                 </p>
               </div>
 
               <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <h3
+                  className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   End-to-End Solutions
                 </h3>
-                <p className="text-muted-foreground normal-benzin text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <p
+                  className="text-muted-foreground normal-benzin text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   From conceptual design and planning to execution and wrap-up.
                 </p>
               </div>
@@ -214,23 +241,35 @@ const AboutUs = () => {
             {/* Bottom row - 2 boxes expanded */}
             <div className="grid md:grid-cols-2">
               <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <h3
+                  className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Strong Vendor & Venue Network
                 </h3>
-                <p className="text-muted-foreground normal-benzin text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <p
+                  className="text-muted-foreground normal-benzin text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Trusted partnerships across the region for seamless delivery
                 </p>
               </div>
 
               <div className="backdrop-blur-sm p-8 flex justify-center items-center flex-col px-20 py-30 border-2 border-[#65fffc]">
-                <h3 className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <h3
+                  className="text-2xl font-bold mb-4 text-secondary blue-gradient-text text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Creative, Flexible, and Reliable
                 </h3>
-                <p className="text-muted-foreground normal-benzin text-center" data-aos="fade-up"
-            data-aos-duration="2000">
+                <p
+                  className="text-muted-foreground normal-benzin text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   Every project is custom-designed — and on time.
                 </p>
               </div>

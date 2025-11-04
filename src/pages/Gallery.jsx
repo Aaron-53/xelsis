@@ -129,15 +129,15 @@ function Gallery() {
 
   return (
     <div className="min-h-screen relative">
-      <SEO 
+      <SEO
         title="Event Gallery - Xelsis Events Management UAE"
         description="Explore our stunning gallery showcasing 250+ successful events managed by Xelsis Events. From corporate events to cultural celebrations and live entertainment across the UAE."
         keywords="event gallery UAE, corporate events gallery, cultural events photos, live entertainment events, Xelsis Events portfolio, Dubai events gallery"
         url="/gallery"
         image="/images/gallery-featured.jpg"
         structuredData={breadcrumbSchema([
-          { name: 'Home', url: '/' },
-          { name: 'Gallery', url: '/gallery' }
+          { name: "Home", url: "/" },
+          { name: "Gallery", url: "/gallery" },
         ])}
       />
 
@@ -158,7 +158,7 @@ function Gallery() {
             <div
               key={item.id}
               className="relative aspect-square overflow-hidden group cursor-pointer border"
-              style={{ borderColor: '#65fffc' }} 
+              style={{ borderColor: "#65fffc" }}
             >
               <img
                 src={item.src}

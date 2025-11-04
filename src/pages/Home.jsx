@@ -1,7 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import { organizationSchema, websiteSchema, eventSchema } from "../utils/structuredData";
+import {
+  organizationSchema,
+  websiteSchema,
+  eventSchema,
+} from "../utils/structuredData";
 import image21 from "../assets/gallery/image21.jpg";
 import home from "../assets/homeimages/home1.jpg";
 import icon1 from "../assets/homeimages/1.svg";
@@ -131,18 +135,22 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white">
-      <SEO 
+      <SEO
         title="Xelsis Events Management - Premier Event Planning in UAE"
         description="With over two decades of experience and 250+ successful events, Xelsis Events Management is your trusted partner for extraordinary corporate, cultural, and live entertainment experiences across the UAE."
         keywords="event management UAE, corporate events Dubai, live entertainment, cultural events, sports events, exhibitions, event planning Dubai, Abu Dhabi events, Xelsis Events"
         url="/"
-        structuredData={[organizationSchema, websiteSchema, eventSchema({
-          name: "Xelsis Events 2025",
-          description: "Premier event management services by Xelsis Events",
-          startDate: "2025-12-01T19:00:00+04:00",
-          locationName: "UAE",
-          city: "Dubai"
-        })]}
+        structuredData={[
+          organizationSchema,
+          websiteSchema,
+          eventSchema({
+            name: "Xelsis Events 2025",
+            description: "Premier event management services by Xelsis Events",
+            startDate: "2025-12-01T19:00:00+04:00",
+            locationName: "UAE",
+            city: "Dubai",
+          }),
+        ]}
       />
       {/* Hero Section */}
       <section className="w-full h-screen relative -mt-16 pt-16">
