@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,9 +15,10 @@ AOS.init({
 });
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen">
-        <Navigation />
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen">
+          <Navigation />
         {/* Full Page Background Pattern */}
         <div
           className="fixed inset-0 -z-10 pointer-events-none"
@@ -96,6 +98,7 @@ function App() {
         </footer>
       </div>
     </Router>
+    </HelmetProvider>
   );
 }
 

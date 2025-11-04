@@ -1,4 +1,6 @@
 import { useState } from "react";
+import SEO from "../components/SEO";
+import { breadcrumbSchema } from "../utils/structuredData";
 
 // Import all gallery images from assets
 import image1 from "../assets/gallery/image1.jpg";
@@ -127,6 +129,17 @@ function Gallery() {
 
   return (
     <div className="min-h-screen relative">
+      <SEO 
+        title="Event Gallery - Xelsis Events Management UAE"
+        description="Explore our stunning gallery showcasing 250+ successful events managed by Xelsis Events. From corporate events to cultural celebrations and live entertainment across the UAE."
+        keywords="event gallery UAE, corporate events gallery, cultural events photos, live entertainment events, Xelsis Events portfolio, Dubai events gallery"
+        url="/gallery"
+        image="/images/gallery-featured.jpg"
+        structuredData={breadcrumbSchema([
+          { name: 'Home', url: '/' },
+          { name: 'Gallery', url: '/gallery' }
+        ])}
+      />
 
       {/* Hero Section with Background Pattern */}
       <div className="relative">

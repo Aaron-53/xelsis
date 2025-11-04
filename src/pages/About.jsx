@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import SEO from "../components/SEO";
+import { breadcrumbSchema, serviceSchema } from "../utils/structuredData";
 import aboutUsImage from "../assets/about_us.jpg";
 import founderImage from "../assets/founder.png";
 
@@ -38,6 +40,19 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen text-white">
+      <SEO 
+        title="About Xelsis Events - Leading Event Management Company in UAE"
+        description="Discover Xelsis Events Management, UAE's premier event planning company with over 20 years of experience, 250+ successful events, and expertise in corporate, cultural, and live entertainment events."
+        keywords="about Xelsis Events, event management company UAE, corporate events Dubai, event planning services, UAE event management, Dubai event planners"
+        url="/about"
+        structuredData={[
+          breadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'About', url: '/about' }
+          ]),
+          serviceSchema
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative pt-24 pb-8">
         <div className="absolute bg-transparent inset-0" />

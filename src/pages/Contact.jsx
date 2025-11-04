@@ -1,3 +1,5 @@
+import SEO from "../components/SEO";
+import { breadcrumbSchema } from "../utils/structuredData";
 import ContactInfo from "../components/ContactInfo.jsx";
 import ContactForm from "../components/ContactForm.jsx";
 import MapSection from "../components/MapSection.jsx";
@@ -6,6 +8,16 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="diagonal-lines-bg min-h-screen">
+      <SEO 
+        title="Contact Xelsis Events - Get Your Event Quote Today"
+        description="Contact Xelsis Events Management for professional event planning services in UAE. Call +971 50 901 8392 or email info@xelsisevents.com for corporate, cultural, and live entertainment events."
+        keywords="contact Xelsis Events, event planning UAE, get event quote, corporate events Dubai, UAE event management contact, event planning services"
+        url="/contact"
+        structuredData={breadcrumbSchema([
+          { name: 'Home', url: '/' },
+          { name: 'Contact', url: '/contact' }
+        ])}
+      />
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 md:px-12 lg:px-16">
