@@ -3,7 +3,7 @@ import "./ContactForm.css";
 const ContactForm = () => {
   return (
     <div className="contact-form-box text-white">
-      <form action="https://formspree.io/f/mldolbly" method="POST">
+      <form action="https://formspree.io/f/xeoykwjk" method="POST">
         {/* Hidden Configs from ContactForm */}
         <input type="hidden" name="_captcha" value="false" />
         <input
