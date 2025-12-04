@@ -27,6 +27,12 @@ import image21 from "../assets/gallery/image21.jpg";
 import image22 from "../assets/gallery/image22.jpg";
 import image23 from "../assets/gallery/image23.jpg";
 import image24 from "../assets/gallery/image24.jpg";
+import image25 from "../assets/gallery/image25.jpg";
+import image26 from "../assets/gallery/image26.jpg";
+import image27 from "../assets/gallery/image27.jpg";
+import image28 from "../assets/gallery/image28.jpg";
+import image29 from "../assets/gallery/image29.jpg";
+
 
 function Gallery() {
   const [visibleItems, setVisibleItems] = useState(6);
@@ -121,6 +127,11 @@ function Gallery() {
       alt: "Event lighting design",
     },
     { id: 24, src: image24, alt: "Complete event setup" },
+    { id: 25, src: image25, alt: "Complete event setup" },
+    { id: 26, src: image26, alt: "Complete event setup" },
+    { id: 27, src: image27, alt: "Complete event setup" },
+    { id: 28, src: image28, alt: "Complete event setup" },
+    { id: 29, src: image29, alt: "Complete event setup" },
   ];
 
   const loadMore = () => {
